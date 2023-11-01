@@ -1,0 +1,79 @@
+body div:where(.swal2-icon).swal2-success {
+    border-color: #ff5f5f;
+    color: #ff5f5f;
+}
+
+body div:where(.swal2-icon).swal2-success .swal2-success-ring{
+    border: 0.25em solid #ff5f5f3d;
+}
+
+body div:where(.swal2-icon).swal2-success [class^=swal2-success-line]{
+    background-color: #ff5f5f;
+}
+div:where(.swal2-container) button:where(.swal2-styled).delete.swal2-default-outline:focus {
+  box-shadow: 0 0 0 3px rgb(252 77 107 / 50%);
+}
+
+button[disabled]:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+  [disabled]{
+    opacity: 0.5;
+  }
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+  nav a[disabled]{
+    pointer-events: none;
+  }
+ nav .active a {
+    background-color: #6366f1;
+    color: #fff;
+    pointer-events: none;
+}
+  .swal-show-data br,  .swal2-title br{
+    display: none;
+  }
+  .colored-toast.swal2-icon-success {
+    background-color: #a5dc86 !important;
+
+  }
+  .colored-toast .swal2-title{
+    color: #fff;
+  }
+
+  .colored-toast.swal2-icon-error {
+    background-color: #f27474 !important;
+  }
+  
+  .colored-toast.swal2-icon-warning {
+    background-color: #f8bb86 !important;
+  }
+  
+  .colored-toast.swal2-icon-info {
+    background-color: #3fc3ee !important;
+  }
+  
+  .colored-toast.swal2-icon-question {
+    background-color: #87adbd !important;
+  }
+
+
+
